@@ -1,0 +1,6 @@
+#ifndef CONFIG_H_IN
+#define CONFIG_H_IN
+
+#define LIBUHDR_INCLUDED "@ LIBUHDR_INCLUDED @"
+ 
+#endif // CONFIG_H_IN
