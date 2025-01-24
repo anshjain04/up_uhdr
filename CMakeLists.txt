@@ -9,7 +9,7 @@ CPMAddPackage(
     NAME libuhdr
     GITHUB_REPOSITORY anshjain04/libultrahdr
     # VERSION 1.4.0
-    GIT_TAG e4788226b205fdd99700eaee222a692edf95
+    GIT_TAG 07d6632f5ff85d429df7d66b9e8408111d8979cc
     OPTIONS "BUILD_SHARED_LIBS OFF"
             "UHDR_BUILD_EXAMPLES OFF"
             "UHDR_BUILD_TESTS OFF"
@@ -32,4 +32,4 @@ configure_file(config.h.in config.h @ONLY)
 include_directories ($ {CMAKE_CURRENT_BINARY_DIR})
  
 # Link against uhdr
-target_link_libraries(uprj PRIVATE uhdr)
+target_link_libraries(uprj PRIVATE uhdr-static)
